@@ -9,4 +9,4 @@ cache:
 install:
   - npm install
 script:
-  - $(npm bin)/cypress run --record
+  - node_modules\.bin\cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
