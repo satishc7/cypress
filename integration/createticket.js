@@ -6,7 +6,6 @@ describe('My First TEST', function() {
         cy.get('#username').type('satishc+releasetest17@autoserve1.com').should('have.value','satishc+releasetest17@autoserve1.com')
         cy.get('#password').type('rupert22').should('have.value','rupert22')
       
-
        // cy.get('button').click('btn btn-login text txt-medium', {force:true})
        cy.contains('Log in').click()
        cy.wait(2000)
@@ -25,6 +24,7 @@ describe('My First TEST', function() {
       cy.get('#v2-newOrder > div.as-neworder-header.row > div > div.col-xs-24.col-sm-16 > span > button').click()
 
       cy.wait(4000)
+
 
 
       cy.get('#ro').type('89w')
