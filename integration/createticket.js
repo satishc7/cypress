@@ -1,5 +1,5 @@
-describe('My First TEST', function() {
-    it('VISIT AS1 page', function() {
+describe('Test1', function() {
+    it('Create a ticket', function() {
         cy.visit('https://staging.autoserve1.com/login')
         cy.viewport(1500, 800)
 
