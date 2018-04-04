@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run:
           name: Test
-          command: |
+          command: config.yml
 
 workflows:
   version: 2
