@@ -32,8 +32,7 @@ jobs:
           shell: /bin/sh
           name: Test
           command: 
-            echo Running test
-            
+            node_modules/.bin/cypress run            
 workflows:
   version: 2
   build_and_test:
