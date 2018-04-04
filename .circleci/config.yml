@@ -33,9 +33,8 @@ jobs:
           name: Test
           command: npm test
       - run:
-          command: cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
-            echo Running test 
-
+          command: 'cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb'
+            
 workflows:
   version: 2
   build_and_test:
