@@ -7,8 +7,8 @@ jobs:
         environment:
           ## this enables colors in the output
           TERM: xterm
-    working_directory: ~/app
+    working_directory: ~/cypress
     steps:
       - checkout
       - run: npm install
-      - run: cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
+      - run: \cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
