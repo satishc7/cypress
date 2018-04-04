@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run:
           name: Test
-          command: /home/circleci/cypress/cypress run
+          command: |
 
 workflows:
   version: 2
