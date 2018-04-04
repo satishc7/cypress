@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run:
           name: Test
-          command: config.yml
+          command: circleci/config.yml
 
 workflows:
   version: 2
