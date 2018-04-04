@@ -21,10 +21,6 @@ jobs:
 
     working_directory: ~/cypress
 
-    branches:
-      ignore:
-        - cy
-
     steps:
       - checkout
 
