@@ -33,11 +33,8 @@ jobs:
           name: Test
           command: npm test
       - run:
-          command: |
-            echo Running test
-            set +e
-            mkdir -p /tmp/test-results
-            make test    
+          command: cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
+            echo Running test 
 
 workflows:
   version: 2
