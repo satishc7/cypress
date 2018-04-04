@@ -24,13 +24,6 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - node_modules
-  - run:
-    command: cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
-      
-
-- run:
-    shell: /bin/sh
-    command: cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb
 
 workflows:
   version: 2
