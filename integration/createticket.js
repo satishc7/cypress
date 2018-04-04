@@ -25,11 +25,9 @@ describe('Test1', function() {
 
       cy.wait(4000)
 
-
-
       cy.get('#ro').type('89w')
 
-      cy.get('#tech').select('English Tech')
+      cy.get('#techss').select('English Tech')
 
       cy.get('#as-neworder-create').click()
 
