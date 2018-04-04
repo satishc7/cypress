@@ -29,10 +29,6 @@ jobs:
 
       # Create Postgres users and database
       # Note the YAML heredoc '|' for nicer formatting
-      - run: |
-          sudo -u root createuser -h localhost --superuser ubuntu &&
-          sudo createdb -h localhost test_db
-
       - restore_cache:
           keys:
             - v1-cypress-{{ checksum "project.clj" }}
