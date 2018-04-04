@@ -1,7 +1,10 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/mern-starter
+    working_directory: ~/cypress
+    branches:
+      ignore:
+        - cy
     # The primary container is an instance of the first list image listed. Your build commands run in this container.
     docker:
       - image: circleci/node:8.11
@@ -21,19 +24,19 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - node_modules
-  test:
-    docker:
-      - image: circleci/node:8.11
-      - image: mongo:3.4.4
-    steps:
-      - checkout
-      - run:
-          name: Test
-          command: npm test
-      - run:
-          name: Generate code coverage
-          command: '/cypress run'
-      
+  - run:
+    command: |
+      echo Running test
+      set +e
+      mkdir -p /tmp/test-results
+      make test
+
+- run:
+    shell: /bin/sh
+    command: |
+      echo Running test
+      mkdir -p /tmp/test-results
+      make test  
 
 workflows:
   version: 2
