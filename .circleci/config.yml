@@ -33,7 +33,7 @@ jobs:
           name: Test
           command: npm test
       - run:
-          command: 'cypress run --record --key 5d04f046-0c08-44d5-9f7a-23197cc060cb'
+          command: /home/circleci/cypress
             
 workflows:
   version: 2
