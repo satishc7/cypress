@@ -84,6 +84,8 @@ describe('Perform inspection', function () {
  
         cy.get('.finish-inspection').click()
 
+
+        
        /*
         cy.url().should('eq', 'http://localhost:8000/users/1/edit')
         cy.url('https://staging.autoserve1.com/v2/technician/dashboard').then(function() {
