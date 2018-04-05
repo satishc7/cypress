@@ -33,13 +33,7 @@ describe('Test1', function() {
 
       cy.url().should('eq','https://staging.autoserve1.com/serviceAdvisor/dashboard')
 
-      
-
-
-
-
-
-        
+              
       
         
     })
