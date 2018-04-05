@@ -85,8 +85,8 @@ describe('Perform inspection', function () {
         cy.get('.finish-inspection').click()
 
 
-        
-       /*
+
+       
         cy.url().should('eq', 'http://localhost:8000/users/1/edit')
         cy.url('https://staging.autoserve1.com/v2/technician/dashboard').then(function() {
             cy.get('#dropdownMenu').click()
@@ -101,7 +101,7 @@ describe('Perform inspection', function () {
         })
 
 
-*/
+
 
         // cy.get(':nth-child(8) > .inspection-item > :nth-child(2) > .row > .inspection-item-map-photo-note > .pull-right > .media-button > .as1-button > .icon').click()
 
