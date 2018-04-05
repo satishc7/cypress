@@ -7,7 +7,7 @@ describe('Test1', function() {
         cy.get('#password').type('rupert22').should('have.value','rupert22')
       
        // cy.get('button').click('btn btn-login text txt-medium', {force:true})
-       cy.contains('somsakakakskaskasaskaskakqiowkelow09ewkew09ewke9wqekwq09wqkwqe09wqemwqe09wqeklwqe09w').click()
+      ANGLE_instanced_arrays cy.contains('Log in').click()
        cy.wait(2000)
        cy.url().should('eq','https://staging.autoserve1.com/serviceAdvisor/dashboard')
      
